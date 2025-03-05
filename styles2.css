@@ -1,0 +1,281 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    height: 750px;
+}
+
+.slider-container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide a img {
+    border-radius: 15px;
+}
+
+#p1div1 {
+    position: absolute;
+    border-radius: 50%;
+    left: 15px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#p1div2 {
+    position: absolute;
+    left: 230px;
+    top: 15px;
+    width: 150px;
+    height: 37px;
+}
+
+#p1div3 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 71px;
+    width: 365px;
+    height: 80px;
+}
+
+#p1div4 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 155px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div5 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 155px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div6 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 220px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div7 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 220px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div8 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 285px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div9 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 285px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div10 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 350px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div11 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 350px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div12 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 415px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div13 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 415px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div14 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 480px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div15 {
+    position: absolute;
+    border-radius: 15px;
+    left: 200px;
+    top: 480px;
+    width: 180px;
+    height: 60px;
+}
+
+#p1div16 {
+    position: absolute;
+    border-radius: 15px;
+    left: 15px;
+    top: 545px;
+    width: 180px;
+    height: 60px;
+}
+
+.Spage {
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    height: 550px;
+    perspective: 1000px; /* تأثير العمق */
+}
+
+#mycarte {
+    border-radius: 20px;
+}
+
+.slide {
+    width: 400px;
+    height: 755px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons {
+    background-color: rgb(32, 39, 51);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 120px;
+    left: 17px;
+    width: 356px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+button {
+    width: 116px;
+    height: 100px;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.5s;
+}
+
+button:focus {
+    background-color: rgb(8, 125, 90);
+}
+
+.button-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 116px;
+    height: 100%;
+    background-color: rgb(8, 125, 90);
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+/* تأثير flip */
+.Spage .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.Spage.flip .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 125, 90);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+}
